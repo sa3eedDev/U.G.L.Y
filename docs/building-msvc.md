@@ -18,6 +18,7 @@ You will require **api_id** and **api_hash** to access the Telegram API servers.
 
 ## Install third party software
 
+* Download and install git https://git-scm.com/download/win
 * Download **ActivePerl** installer from [https://www.activestate.com/activeperl/downloads](https://www.activestate.com/activeperl/downloads) and install to ***BuildPath*\\ThirdParty\\Perl**
 * Download **NASM** installer from [http://www.nasm.us](http://www.nasm.us) and install to ***BuildPath*\\ThirdParty\\NASM**
 * Download **Yasm** executable from [http://yasm.tortall.net/Download.html](http://yasm.tortall.net/Download.html), rename to *yasm.exe* and put to ***BuildPath*\\ThirdParty\\yasm**
@@ -54,7 +55,7 @@ Open **x86 Native Tools Command Prompt for VS 2019.bat**, go to ***BuildPath*** 
 
     mkdir Libraries
     cd Libraries
-
+    
     git clone --branch 0.5.0 https://github.com/ericniebler/range-v3 range-v3
 
     git clone https://github.com/telegramdesktop/lzma.git
@@ -87,6 +88,9 @@ Open **x86 Native Tools Command Prompt for VS 2019.bat**, go to ***BuildPath*** 
     git checkout fix_capture
     cd build
     cmake -G "Visual Studio 16 2019" -A Win32 -D LIBTYPE:STRING=STATIC -D FORCE_STATIC_VCRT:STRING=ON ..
+    
+Than copy and paste this 
+
     msbuild OpenAL.vcxproj /property:Configuration=Debug
     msbuild OpenAL.vcxproj /property:Configuration=Release
     cd ..\..
