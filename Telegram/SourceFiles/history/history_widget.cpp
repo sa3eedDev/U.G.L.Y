@@ -2840,7 +2840,7 @@ void HistoryWidget::saveEditMsg() {
 		}
 		return;
 	} else if (!left.text.isEmpty()) {
-		Ui::show(Box<InformBox>(tr::lng_edit_too_long(tr::now)));
+		Ui::show(Box<InformBox>(tr::lng_edit_too_long(tr::now, lt_count, sending.text.size() + left.text.size(), lt_character_limit, "4096")));
 		return;
 	}
 
