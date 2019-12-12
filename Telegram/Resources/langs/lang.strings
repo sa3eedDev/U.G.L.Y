@@ -111,8 +111,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_status_connecting" = "connecting...";
 
 "lng_chat_status_unaccessible" = "group is inaccessible";
-"lng_chat_status_members#one" = "{count} member";
-"lng_chat_status_members#other" = "{count} members";
+"lng_chat_status_members#one" = "{count} subscriber";
+"lng_chat_status_members#other" = "{count} subscribers";
 "lng_chat_status_online#one" = "{count} online";
 "lng_chat_status_online#other" = "{count} online";
 "lng_chat_status_members_online" = "{members_count}, {online_count}";
